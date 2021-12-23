@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nord Mouse - FreeCodeCamp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="body-wrapper">
+      <header id="header">
+        <nav id="nav-bar">
+          <img
+            src="./Nord Mouse logo.png"
+            alt="Company logo that has an outlined icon of a gaming mouse on the left of the text 'NORD MOUSE'"
+            id="header-img"
+            width="300"
+            height="50"
+          />
+          <ul>
+            <li><a href="#Features" class="nav-link">FEATURES  </a>|</li>
+            <li><a href="#Demo" class="nav-link">DEMO  </a>|</li>
+            <li><a href="#Newsletter" class="nav-link">NEWSLETTER</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container" id="Features">
+        <br>
+        <h1 >WHAT YOU CAN EXPECT FROM OUR MICE</h1>
+        <div>
+          <div class="feature-boxes">
+            <div id="box-2">
+              <div class="icon-div">
+                <img src="./mouse-pad.png" alt="" class="feature-icons" />
+              </div>
+              <div class="feature-div">
+                <ul class="feature-txt">
+                  <li class="list-head">Responsive</li>
+                  <li>Upto 1000hz polling rate</li>
+                  <li>Upto 24000 DPI</li>
+                  <li>Glass pads</li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="box-1">
+              <div class="icon-div">
+                <img src="./mouse.png" alt="" class="feature-icons" />
+              </div>
+              <div class="feature-div">
+                <ul class="feature-txt">
+                  <li class="list-head">Ergonomic</li>
+                  <li>Stylish design</li>
+                  <li>Comfortable</li>
+                  <li>Ambidextrous</li>
+                  <li>Less than 100gm</li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="box-3">
+              <div class="icon-div">
+                <img src="./rgb.png" alt="" class="feature-icons" />
+              </div>
+              <div class="feature-div">
+                <ul class="feature-txt">
+                  <li class="list-head">Attractive</li>
+                  <li>RGB for days</li>
+                  <li>Software for customization</li>
+                  <li>Bright and Responsive LEDs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="feature-boxes"></div>
+          <div class="feature-boxes"></div>
+        </div>
+
+        <div id="Demo">
+          <br>
+          <h1>A TASTE OF WHAT OUR MICE CAN DO</h1>
+          <iframe
+            id="video"
+            
+            src="https://www.youtube.com/embed/96G5y_znKr0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div id="Newsletter">
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <h1>INTERESTED? JOIN OUR NEWSLETTER!</h1>
+            <label for="email" id="email-label">
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="EMAIL HERE"
+                required
+              />
+            </label>
+            <br />
+            <input type="submit" id="submit" value="JOIN"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

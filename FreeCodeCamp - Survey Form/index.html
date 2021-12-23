@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1 id="title">WHO IS THE STRONGEST AVENGER?</h1>
+    <p id="description">
+      This is a survey to determine once and for all, by popular choice, who is
+      the <strong>strongest Avenger.</strong>
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Enter name : 
+        <br>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="your name"
+          required
+        />
+      </label>
+      <br>
+      <br>
+      <label for="email" id="email-label">
+        Enter email : <br>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="'example123@gmail.com'"
+          required
+        />
+      </label>
+      <br>
+      <br>
+      <label for="dropdown" id="dropdown-label">
+        Which Avenger do you think is the strongest?
+        <select name="dropdown" id="dropdown">
+          <option value="default" selected disabled hidden>
+            Choose an avenger
+          </option>
+          <option value="thor">Thor</option>
+          <option value="hulk">Hulk</option>
+          <option value="Ant Man">Ant Man</option>
+          <option value="Iron Man">Iron Man</option>
+        </select>
+      </label>
+      <br />
+      <br />
+      <label for="number" id="number-label">
+        How strong is this avenger (scale of 1 to 10) : <br>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="0"
+          max="10"
+          placeholder="1 - 10"
+        />
+      </label>
+      <br>
+      <br>
+      <section id="radio">
+        Do you really think your chosen avenger is the strongest?
+        <br>
+        <label for="confirm" class="radio-option"
+          ><input type="radio" value="yes" name="confirm" class="radio-btn"
+        />Yes</label>
+        <br>
+        <label for="confirm" class="radio-option"
+          ><input type="radio" value="no" name="confirm" class="radio-btn"
+        />No</label>
+      </section>
+
+      <br>
+
+      <section id="checkbox">  
+        Which of the following Avengers do you think have the same strength?
+          <br>
+        <label for="1" class="checkbox-option">
+          <input type="checkbox" name="1" value="Iron Man" class="check-btn"/>Iron Man
+        </label>
+          
+        <br />
+        <label for="2" class="checkbox-option">
+          <input type="checkbox" name="2" value="Ant Man" class="check-btn"/>Ant Man</label>
+        <br />
+        <label for="3" class="checkbox-option"
+          ><input type="checkbox" name="3" value="Thor" class="check-btn"/>Thor</label
+        >
+        <br />
+        <label for="4" class="checkbox-option"
+          ><input type="checkbox" name="4" value="Hulk" class="check-btn"/>Hulk</label
+        >
+      </section>
+      <br>
+      <label for="comments" id="comments-label">
+        Type any additional comments here
+        <textarea name="comments" id="textarea" cols="30" rows="10" placeholder="type your comments here..."></textarea>
+      </label>
+      <br>
+      <br>
+      <button id="submit">Submit your answers</button>
+      <!-- <input type="submit" value="submit"> -->
+    </form>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>

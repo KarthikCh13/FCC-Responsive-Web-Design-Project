@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+html {
+  background-image: linear-gradient(
+      0deg,
+      rgba(255 255 255 / 54%),
+      rgba(9 0 150 / 69%)
+    ),
+    url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.gg%2Fwp-content%2Fuploads%2F2018%2F04%2FAvengers-Infinity-War-2018-5K-Ultra-HD.jpg&f=1&nofb=1");
+
+  background-size: 1900px 1150px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: goldenrod;
+}
+
+.container {
+  width: 700px;
+  background-color: rgba(16, 19, 61, 0.8);
+  border-radius: 10px;
+  box-shadow: 10px 8px 20px goldenrod;
+  margin-left: 20px;
+  padding: 10px 0px 30px 0px;
+}
+
+.main {
+  margin: 0px 50px 0px 50px;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+  width: 400px;
+  height: 30px;
+  border: solid 1px goldenrod;
+  border-radius: 5px;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+#textarea {
+  width: 400px;
+  height: 100px;
+  border: solid 1px goldenrod;
+  border-radius: 5px;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+#name-label,
+#number-label,
+#email-label,
+#dropdown-label,
+#radio,
+#checkbox,
+#comments-label {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.radio-option,
+.checkbox-option {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.check-btn,
+.radio-btn {
+  position: relative;
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+}
+
+.check-btn {
+  border-radius: 10px;
+}
+
+#submit {
+  height: 30px;
+  width: 250px;
+  color: rgba(38, 0, 177);
+  font-size: large;
+  font-weight: 600;
+  background-color: rgb(250, 194, 52);
+  border: none;
+  border-radius: 6px;
+}
+
+#submit:hover {
+  transition: 0.2s;
+  box-shadow: inset 0px 0px 5px 1px rgb(0, 0, 0);
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+      width:530px;
+    }
+  
+    #name,
+    #email,
+    #number,
+    #dropdown,
+    #textarea {
+      width: 440px;
+    }
+  }
+  
+
+@media (max-width: 500px) {
+
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+      width: 420px;
+    }
+  
+    #name,
+    #email,
+    #number,
+    #dropdown,
+    #textarea {
+      width: 330px;
+    }
+  }
+  

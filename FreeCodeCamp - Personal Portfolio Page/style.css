@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lexend+Mega:wght@500;600;700;800;900&display=swap");
+
+@viewport {
+  width: device-width;
+  height: device-height;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  font-family: "Lexend Mega", sans-serif;
+  color: #5cdb94;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Arvo", serif;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-family: "Lexend Mega", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+img {
+  transition: 0.2s;
+  border-radius: 0.8em;
+  max-width: 100%;
+  height: 250px;
+  width: 400px;
+}
+
+#navbar {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #05396b;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#nav-btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-btn {
+  padding: 1em;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.nav-btn:hover {
+  background-color: #5cdb94;
+  color: #05396b;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #5cdb94;
+  color: #05396b;
+}
+
+#welcome-position {
+  position: relative;
+  top: 15rem;
+}
+
+#projects {
+  height: 100vh;
+  background-color: #05396b;
+  color: #5cdb94;
+}
+
+#projects h1 {
+  padding-top: 6rem;
+  font-size: 4rem;
+}
+
+.project-grid {
+  display: flex;
+  grid-template-columns: 450px 450px 450px;
+  column-gap: 5rem;
+  margin: 2rem;
+}
+
+.project-tile {
+  position: relative;
+  background-color: #05396b;
+  top: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 0.8em;
+  transition: 0.2s;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  color: #5cdb94;
+  padding: 10px;
+  transition: 0.2s;
+  border-radius: 0.5rem;
+}
+
+.project-tile:hover {
+  background-color: #5cdb94;
+  color: #05396b;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-tile:hover img {
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-tile:hover p {
+  color: #5cdb94;
+  background-color: #05396b;
+  transform: translateY(1em);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+#links {
+  height: 100vh;
+  background-color: #5cdb94;
+  color: #05396b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#links > h1 {
+  padding-top: 10rem;
+}
+
+.contact-links {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-links a {
+  color: #05396b;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  height: fit-content;
+  width: 250px;
+  border-radius: 0.6rem;
+  box-shadow: 15px 15px 30px rgba(5, 57, 107, 0.2);
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  color: #5cdb94;
+  background-color: #05396b;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(1em);
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  img {
+    border-radius: 0.3em;
+    max-width: 40%;
+  }
+
+  #welcome-position {
+    position: relative;
+    top: 15rem;
+  }
+
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects h1 {
+    font-size: 3rem;
+  }
+
+  .project-tile {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    justify-self: space-evenly;
+  }
+
+  .project-title {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .project-tile:hover img {
+    box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .project-tile:hover p {
+    transform: none;
+    box-shadow: none;
+  }
+
+  #links > h1 {
+    padding-top: 5rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-links a {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1.5rem;
+  }
+}

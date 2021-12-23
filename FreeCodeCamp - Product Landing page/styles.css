@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600;700&display=swap");
+
+html {
+  background-color: black;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+}
+
+#body-wrapper {
+  margin: auto;
+  width: 90%;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0px;
+  background-color: rgb(255, 208, 0);
+  z-index: 2;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 5px 0px 20px black;
+}
+
+#header-img {
+  margin-top: 5px;
+}
+
+nav > ul {
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin-left: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  transition: 0.25s;
+  color: white;
+}
+
+.container {
+  background-color: rgb(255, 208, 0);
+  top: 60px;
+  position: relative;
+  margin-top: auto;
+  padding-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+#box-1,
+#box-2,
+#box-3 {
+  padding: 10px 30px;
+  margin: 10px;
+  background-color: rgb(255, 187, 0);
+  border-bottom: 1px black solid;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.178);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-div,
+.feature-txt {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.feature-icons {
+  width: 80px;
+  padding-top: 20px;
+}
+
+.list-head {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#Demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
+  width: 1280px;
+  height: 720px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  width: 800px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.685);
+  outline: none;
+}
+
+#email::placeholder {
+  font-family: "Source Code Pro", monospace;
+  font-size: 15px;
+}
+
+#submit {
+  font-family: "Source Code Pro", monospace;
+  font-size: 25px;
+  font-weight: 600;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: black;
+  color: rgb(255, 187, 0);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.685);
+}
+
+#submit:hover {
+  transition: 0.25s;
+  color: black;
+  background-color: white;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 500px) {
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #body-wrapper {
+    margin: auto;
+    width: 100%;
+  }
+
+  nav > ul {
+    padding-right: 60px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 100px;
+  }
+
+  .feature-boxes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  #video {
+    width: 450px;
+    height: 250px;
+  }
+
+  #email {
+    width: 400px;
+  }
+}
